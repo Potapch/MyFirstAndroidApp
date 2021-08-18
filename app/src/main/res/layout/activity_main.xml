@@ -1,18 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/hnw_msg"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Hello New World!"
+        android:letterSpacing="1"
+        android:textColor="@color/cardview_dark_background"
+        android:typeface="monospace" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:gravity="center"
+        android:background="@color/teal_700" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="@color/black"
+        android:text="BUTTON" />
+
+    <Switch
+        android:id="@+id/swch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are You Enter Email?"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
+
+    <CheckBox
+        android:id="@+id/cbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Click checkbox" />
+
+    <ToggleButton
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp" />
+
+    <CalendarView
+        android:id="@+id/cldr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+<!-- ems - это ширина букв в тексте -->
